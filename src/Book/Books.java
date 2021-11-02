@@ -40,7 +40,7 @@ public class Books {
     public String getAuthor() {
         return author;
     }
-    public String getAutor(int i) {
+    public String getAuthor(int i) {
         if(i>=0 && i< authors.length) {
             return authors[i];
         }else {
@@ -93,7 +93,7 @@ public class Books {
             System.out.println("Название книги: " + name + "; Автор: " + author + " ; Издательство: " + getPublish().getNamePublish() + "," + getPublish(). getCity() + "; Год издания: " + year);
         }
         else if(getAuthors() != null && getAuthors().length > 0) {
-            System.out.println("Название книги: " + name + "; Автор: " + Arrays.toString(getAuthors()) + " ; Издательство: " + getPublish().getNamePublish() + "," + getPublish(). getCity() + "; Год издания: " + year);
+            System.out.println("Название книги: " + name + "; Авторы: " + Arrays.toString(getAuthors()) + " ; Издательство: " + getPublish().getNamePublish() + "," + getPublish(). getCity() + "; Год издания: " + year);
         }
         else  {
             System.out.println("Название книги: " + name + ";  Издательство: " + getPublish().getNamePublish() + "," + getPublish(). getCity() + "; Год издания: " + year);
